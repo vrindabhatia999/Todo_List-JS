@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(200deg, #ec235d, #d88771);
+	color: white;
+	font-family: sans-serif;
+	min-height: 100vh;
+}
+header{
+	font-size: 1.5rem;
+}
+header,
+form{
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input, form button{
+	padding: 0.5rem;
+	font-size: 2rem;
+	border: none;
+	background-color: white;
+}
+form button{
+	color: #d88771;
+	background: white;
+	color: pointer;
+	transition: all 0.3s ease;
+}
+
+form button:hover{
+	background-color: #d88771;
+	color: white;
+}
+.todo-container{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.todo-list{
+	min-width: 30%;
+	list-style: none;
+}
+
+.todo{
+	margin: 0.5rem;
+	background-color: white;
+	color: black;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease;
+}
+.todo li{
+	flex: 1;
+}
+.trash-btn, .complete-btn{
+	background-color: #ff6f47;
+	color: white;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+.complete-btn{
+	background-color: green;
+
+}
+
+.fa-trash, .fa-ckeck{
+	pointer-events: none;
+}
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+.fall{
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+}
+.select{
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+	font-size: 15px;
+
+}
+select{
+	color: #ff6f47;
+	width: 10rem;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.select::after{
+	content: "\25BC";
+	position: absolute;
+	background-color: #ff6f47;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	pointer-events: none;
+}
+.select:hover::after{
+	background-color: white;
+	color: #ff6f47;
+}
+.event{
+	background-color: #d5aaff;
+	position: relative;
+	display: block;
+	background-repeat: repeat-x;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-size: 17px;
+	
+ 
+	text-align: center;
+	animation: event 2s ease-in infinite;
+
+}
+@keyframes event{
+	0%{
+		background-color:  #d5aaff;
+	}
+	20%{
+		background-color: coral;
+	}
+	50%{
+		background-color: #bffcc6;
+		color: black;
+	}
+}
+.schedule img{
+	width: 10%;
+	height: 50px;
+	position: relative;
+	background-repeat: repeat-y;
+	bottom: 0;
+	display: block;
+	z-index: 1;
+	animation-duration: 20s;
+	animation: schedule 3s ease-in infinite alternate-reverse;
+
+}
+
+@keyframes schedule{
+	100%{
+		transform: translateY(100px) rotateZ(30deg);
+	}
+}
