@@ -1,8 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body{
 	background: linear-gradient(200deg, #ec235d, #d88771);
@@ -20,20 +15,6 @@ form{
 	justify-content: center;
 	align-items: center;
 }
-
-form input, form button{
-	padding: 0.5rem;
-	font-size: 2rem;
-	border: none;
-	background-color: white;
-}
-form button{
-	color: #d88771;
-	background: white;
-	color: pointer;
-	transition: all 0.3s ease;
-}
-
 form button:hover{
 	background-color: #d88771;
 	color: white;
@@ -52,9 +33,6 @@ form button:hover{
 	margin: 0.5rem;
 	background-color: white;
 	color: black;
-	font-size: 1.5rem;
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	transition: all 0.5s ease;
 }
@@ -72,10 +50,6 @@ form button:hover{
 .complete-btn{
 	background-color: green;
 
-}
-
-.fa-trash, .fa-ckeck{
-	pointer-events: none;
 }
 .completed{
 	text-decoration: line-through;
@@ -120,4 +94,3 @@ select{
 	background-color: white;
 	color: #ff6f47;
 }
- 
